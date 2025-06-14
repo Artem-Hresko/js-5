@@ -78,3 +78,70 @@ switch (monthNumber) {
   default:
     alert(" Enter the months number correctly!");
 }
+
+// 4
+
+let colour = prompt("Enter any colour of red, green, or yellow");
+
+switch (colour) {
+  case "green":
+    alert("You can go");
+
+    break;
+  
+  case "yellow":
+    alert("You need to wait");
+
+    break;
+  
+  case "red":
+    alert("You need to stop");
+
+    break;
+  default:
+    alert("Enter your colour correctly!");
+}
+
+
+
+
+// 5
+
+
+
+
+
+const number1 = Number(prompt("Enter a number "));
+const number2 = Number(prompt("Enter a number "));
+let operator = prompt("Can be +, -, *, or /");
+
+
+let result;
+
+
+switch (operator) {
+  case "+":
+    result = number1 + number2;
+    alert(`Result: ${number1} ${operator} ${number2} = ${result}`);
+    break;
+  case "-":
+    result = number1 - number2;
+    alert(`Result: ${number1} ${operator} ${number2} = ${result}`);
+    break;
+  case "*":
+    result = number1 * number2;
+    alert(`Result: ${number1} ${operator} ${number2} = ${result}`);
+    break;
+  case "/":
+    if (number2 !== 0) {
+      result = number1 / number2;
+     alert( `Result: ${number1} ${operator} ${number2} = ${result}`);
+    } else {
+      alert("Warning: Division by zero is not allowed!");
+    }
+    break;
+  default:
+    alert("Unknown operator. Please use +, -, *, or /");
+}
+
+
